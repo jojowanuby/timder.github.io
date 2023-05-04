@@ -12,7 +12,7 @@ body {
 
 .tinder {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@ body {
 
 .tinder--cards {
   flex-grow: 1;
-  padding-top: 40px;
+  padding-top: 10px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -71,41 +71,43 @@ body {
   max-width: 400px;
   height: 70vh;
   background: #FFFFFF;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   border-radius: 8px;
   overflow: hidden;
   position: absolute;
   will-change: transform;
   transition: all 0.3s ease-in-out;
   cursor: -webkit-grab;
-  cursor: -moz-grab;
   cursor: grab;
 }
 
 .moving.tinder--card {
   transition: none;
   cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
   cursor: grabbing;
 }
 
 .tinder--card img {
   max-width: 100%;
+  max-height: 80%;
   pointer-events: none;
 }
 
 .tinder--card h3 {
-  margin-top: 32px;
-  font-size: 32px;
-  padding: 0 16px;
-  pointer-events: none;
-}
-
-.tinder--card p {
-  margin-top: 24px;
+  margin-top: 5px;
   font-size: 20px;
   padding: 0 16px;
   pointer-events: none;
+  text-align: left;
+
+}
+
+.tinder--card p {
+  margin-top: 10px;
+  font-size: 16px;
+  padding: 0 16px;
+  pointer-events: none;
+  text-align: left;
 }
 
 .tinder--buttons {
@@ -141,26 +143,32 @@ body {
   color: #CDD6DD;
 }
 
-.main_h {
-  position: fixed;
-  top: 0px;
-  max-height: 70px;
-  z-index: 999;
-  width: 100%;
-  padding-top: 17px;
-  background: none;
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
   overflow: hidden;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  opacity: 0;
-  top: -100px;
-  padding-bottom: 6px;
-  font-family: "Montserrat", sans-serif;
 }
-.row {
-  width: 100%;
-  max-width: 940px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 2%;
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
