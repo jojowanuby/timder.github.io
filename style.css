@@ -3,13 +3,13 @@
   padding: 0;
   margin: 0;
 }
-
+/*
 body {
   background: #CCFBFE;
   overflow: hidden;
   font-family: sans-serif;
 }
-
+*/
 .tinder {
   width: 100vw;
   height: 90vh;
@@ -142,6 +142,41 @@ body {
 .fa-remove {
   color: #CDD6DD;
 }
+/* Add a red background color to the top navigation */
+.topnavin {
+  background-color: #ff6b6b;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnavin a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 60px;
+
+}
+
+/* Style the icons inside the links */
+.topnavin a i {
+  margin-right: 8px; /* Add some space between the icon and the text */
+}
+
+/* Change the color of links on hover */
+.topnavin a:hover {
+  background-color: #ff8787;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnavin a.active {
+  background-color: #ff4757;
+  color: white;
+}
 
 
 
@@ -149,6 +184,8 @@ body {
 .topnav {
   background-color: #ff6b6b;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -159,6 +196,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
+
 }
 
 /* Style the icons inside the links */
@@ -176,4 +214,200 @@ body {
 .topnav a.active {
   background-color: #ff4757;
   color: white;
+}
+
+/* ------------------fc-------------------------------------------------------- */
+.main_h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.headercol2 {
+  width: 33%;
+}
+/**/
+.container{
+  flex-grow: 1;
+  padding-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+#tinder-cards{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #4b4b4b;
+    justify-content: center;
+    align-items: center;
+}
+.logo-icon img {
+  height: 25px;
+  width: auto;
+}
+
+#its-match-img img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#its-match-title-text{
+   position: relative;
+  top: 10%;
+  left: 25%;
+}
+.inner-its-match-content{
+  position: relative;
+  left: 20px;
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: #e53935; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e35d5b,
+    #e53935
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.tinder-nav{
+  background-color:#ffffff;
+  padding: 2px 1px 2px 1px;
+}
+
+#its-match-card {
+
+  background-color: #4b4b4b;
+
+ 
+}
+
+
+#its-match-card p{
+  color: #ffffff;
+  font-weight: 200;
+  font-size: .7em;
+ 
+}
+
+#its-match-card h2{
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 1.6em;
+  padding-top: 20px;
+
+}
+
+
+#its-match-card a{
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 5em;
+}
+.boton-section{
+  padding-top:20px;
+}
+.boton-section span{
+  padding-left:5px;
+  font-size:25px;
+}
+
+
+.box {
+  border: 1px solid black;
+  padding: 10px;
+  display: inline-block;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+
+
+
+#its-match-card button{
+  background-color: Transparent;
+  border-color:#606060;
+  margin: 10px 0px 5px 40px;
+  width: 180px;
+}
+
+#reference-text{
+   margin:10px 0px 10px 65px;
+   
+}
+#snap-props-img{
+  padding-top:10px;
+  margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+}
+
+
+#snap-props-card{
+  background-color:#ffffff; 
+  
+}
+#sub-text p{
+  font-size: 13px;
+  padding-top:4px;
+}
+#sub-text .sub-num span{
+  font-size: 13px;
+  color:#DCDCDC;
+  padding-left:10px;
+}
+#sub-text{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #DCDCDC;
+  border-radius: 5px;
+  padding: 0px;
+  margin:0px;
+  width: 233px;
+    height: 30px;
+  background-color:#ffffff; 
+   position: absolute;
+    left: 16px;
+    top: 280px;
+}
+#reload-boton{
+   position: absolute;
+    left: 21px;
+    top: 330px;
+}
+#map-boton{
+   position: absolute;
+    left: 165px;
+    top: 330px;
+}
+#reload-boton{
+   position: absolute;
+    left: 21px;
+    top: 330px;
+}
+#cancel-boton{
+   position: absolute;
+    left: 57px;
+    top: 330px;
+}
+#heart-boton{
+   position: absolute;
+    left: 111px;
+    top: 330px;
 }
